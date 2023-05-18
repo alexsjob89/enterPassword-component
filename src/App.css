@@ -6,73 +6,36 @@ body {
 
 .App {
     position: absolute;
-    top: 6rem;
-    width: 100%;
-    height: 45rem;
-    background-color: #E7A28C;
-}
-
-.PasswordFunctions {
-    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.327), rgba(0, 128, 0, 0.367), rgba(255, 255, 0, 0.442));
+    margin: auto;
     inset: 0 0 0 0;
-    margin: auto;
-    /* display: flex; */
-    width: 30rem;
-    height: 30rem;
-    border: 1px solid black;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.33);
 }
 
-.profile>p {
-    margin-left: 4rem;
-    width: 17rem;
-    margin: auto;
-    margin-top: -3.5rem;
-    margin-left: 4.8rem;
+input {
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 3rem;
+    margin-left: 5px;
 }
 
-.profile>h3 {
-    margin: auto;
-    margin-top: 0rem;
-    margin-left: 4.8rem;
+button {
+    font-size: 20px;
+    padding: 6px;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 8px;
 }
 
-h1 {
-    margin-left: 4rem;
-}
-
-.profile {
-    margin-top: 4rem;
-    border: 1px solid black;
-    width: max-content;
-    height: 5rem;
-    margin-left: 4rem;
-}
-
-.inputs-content-one {
-    border: 1px solid black;
-    height: 14rem;
-    width: 21.8rem;
-    margin-left: 4rem;
-    margin-top: 0.5rem;
-}
-
-.inputs-content {
-    border: 1px solid black;
-    height: 14rem;
-    width: 21.8rem;
-    margin-left: 4rem;
-    margin-top: 0.5rem;
-}
-
-
-/* .inputs-content-one>label {
-    border: 1px solid black;
-    position: absolute;
-} */
-
-.input-padlock {
-    /* border: 1px solid black; */
-    background-color: white;
-    width: 15rem;
-    height: 2rem;
+button:hover {
+    background-color: rgb(250, 205, 146);
 }

@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import {AiFillEye,AiFillEyeInvisible} from "react-icons/ai";
 import './App.css';
 
 function App() {
@@ -35,16 +36,20 @@ const handleStaySignedIn = () => {
     <div className="App">
 
     <label htmlFor="password">Password:</label>
+
       <input
         type={showPassword ? 'text' : 'password'}
         id="password"
         value={password}
         onChange={handlePasswordChange}
       />
+      <br />
       <button onClick={handleShowPassword}>
-        {showPassword ? 'Hide' : 'Show'}
+        {showPassword ? <AiFillEyeInvisible color="blue" size={18} /> : <AiFillEye color="blue" size={18} />}
       </button>
+
       <button onClick={handleResetPassword}>Reset Password</button>
+      <br />
       <label>
         <input
           type="checkbox"
@@ -53,6 +58,7 @@ const handleStaySignedIn = () => {
         />
         Stay Signed In
       </label>
+      <br />
       <button disabled={locked}>Continue</button>
 
     </div>
